@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50vw;
+    width: 100vh;
+}
+
+.box{
+    align-self: center;
+    background-color: lightblue;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0,0,00.2rem) ;
+    min-width: 25rem;
+    max-width: 35rem;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+
+}
+.box::after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0,0,0);
+
+}
+
+.inputData{
+    margin: auto;
+
+}
